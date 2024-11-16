@@ -38,11 +38,11 @@ const Teamstart = () => {
                         <div className="team-content">
                             <div className="team-img-icon">
                                 <div className="team-img rounded-circle">
-                                    <img src="img/team-1.jpg" className="img-fluid w-100 rounded-circle" alt="John Doe" />
+                                    <img src="./src/img/team-1.jpg" className="img-fluid w-100 rounded-circle" alt="John Doe" />
                                 </div>
                                 <div className="team-name text-center py-3">
-                                    <h4>Full Name</h4>
-                                    <p className="m-0"></p>
+                                    <h4>Developer</h4>
+                                    <p className="m-0">Ceo</p>
                                 </div>
                                 <div className="team-icon d-flex justify-content-center pb-4">
                                     <Link className="btn btn-square btn-secondary text-white rounded-circle m-1" to="#">
@@ -66,7 +66,7 @@ const Teamstart = () => {
                         <div className="team-content">
                             <div className="team-img-icon">
                                 <div className="team-img rounded-circle">
-                                    <img src="img/team-2.jpg" className="img-fluid w-100 rounded-circle" alt="Jane Smith" />
+                                    <img src="./src/img/team-2.jpg" className="img-fluid w-100 rounded-circle" alt="Jane Smith" />
                                 </div>
                                 <div className="team-name text-center py-3">
                                     <h4>Jane Smith</h4>
@@ -94,7 +94,7 @@ const Teamstart = () => {
                         <div className="team-content">
                             <div className="team-img-icon">
                                 <div className="team-img rounded-circle">
-                                    <img src="img/team-3.jpg" className="img-fluid w-100 rounded-circle" alt="Michael Johnson" />
+                                    <img src="./src/img/team-3.jpg" className="img-fluid w-100 rounded-circle" alt="Michael Johnson" />
                                 </div>
                                 <div className="team-name text-center py-3">
                                     <h4>Michael Johnson</h4>
@@ -122,7 +122,7 @@ const Teamstart = () => {
                         <div className="team-content">
                             <div className="team-img-icon">
                                 <div className="team-img rounded-circle">
-                                    <img src="img/team-4.jpg" className="img-fluid w-100 rounded-circle" alt="Sarah Lee" />
+                                    <img src="./src/img/team-4.jpg" className="img-fluid w-100 rounded-circle" alt="Sarah Lee" />
                                 </div>
                                 <div className="team-name text-center py-3">
                                     <h4>Sarah Lee</h4>

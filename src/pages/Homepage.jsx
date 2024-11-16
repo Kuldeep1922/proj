@@ -9,6 +9,8 @@ import Servicestart from "../components/Servicestart";
 import Blogstart from "../components/Blogstart";
 // import Teamstart from "../components/Teamstart";
 import Testimonialstart from "../components/Testimonialstart";
+import Contactstart from "../components/Contactstart";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
   return (
@@ -23,6 +25,8 @@ const Homepage = () => {
       <Blogstart />
       {/* <Teamstart /> */}
       <Testimonialstart />
+      <Contactstart />
+      <Footer />
     </div>
   );
 };
