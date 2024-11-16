@@ -7,14 +7,17 @@ import Aboutstart from "../components/Aboutstart";
 import Projectstart from "../components/Projectstart";
 import Servicestart from "../components/Servicestart";
 import Blogstart from "../components/Blogstart";
-// import Teamstart from "../components/Teamstart";
+import Teamstart from "../components/Teamstart";
 import Testimonialstart from "../components/Testimonialstart";
 import Contactstart from "../components/Contactstart";
 import Footer from "../components/Footer";
+import Spinner from "../components/Spinner";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   return (
     <div>
+      {/* <Spinner /> */}
       <Tapbar />
       <Navbar />
       <Carousel />
@@ -23,10 +26,12 @@ const Homepage = () => {
       <Servicestart />
       <Projectstart />
       <Blogstart />
-      {/* <Teamstart /> */}
+      <Teamstart />
       <Testimonialstart />
       <Contactstart />
       <Footer />
+      {/* <!-- Back to Top --> */}
+      <Link to="#" className="btn btn-secondary btn-square rounded-circle back-to-top"><i className="fa fa-arrow-up text-white"></i></Link>
     </div>
   );
 };

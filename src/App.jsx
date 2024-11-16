@@ -1,7 +1,14 @@
 import './App.css';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Homepage from './pages/Homepage.jsx';
-import Tapbar from './components/Tapbar.jsx';
+import Blog from './pages/Blog.jsx';
+import About from './pages/About.jsx';
+import Team from './pages/Team.jsx';
+import Projects from './pages/Projects.jsx';
+import Testimonial from './pages/Testimonial.jsx';
+import Service from './pages/Services.jsx';
+import Contactpage from './pages/Contactpage.jsx';
+import Notfound from './pages/Notfound.jsx';
 
 function App() {
   return (
@@ -9,6 +16,14 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/testimonial" element={<Testimonial />} />
+          <Route path="/services" element={<Service />} />
+          <Route path="/contact" element={<Contactpage />} />
+          <Route path="/404" element={<Notfound />} />
         </Routes>
       </div>
     </Router>
