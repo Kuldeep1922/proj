@@ -1,135 +1,123 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-const Contactstart = () => {
+const ContactStart = () => {
     return (
-        <div className="container-fluid py-5 mb-5">
-            <div className="container">
-                <div
-                    className="text-center mx-auto pb-5 wow fadeIn"
-                    data-wow-delay=".3s"
-                    style={{ maxWidth: "600px" }}
-                >
-                    <h5 className="text-primary">Get In Touch</h5>
-                    <h1 className="mb-3">Contact for any query</h1>
-                    <p className="mb-2">
-                        The contact form is currently inactive. Get a functional and working
-                        contact form with Ajax & PHP in a few minutes. Just copy and paste
-                        the files, add a little code and you`re done.
-                        <a href="https://htmlcodex.com/contact-form" target="_blank" rel="noopener noreferrer">Download Now</a>
-                        .
-                    </p>
-                </div>
-                <div className="contact-detail position-relative p-5">
-                    <div className="row g-5 mb-5 justify-content-center">
-                        <div className="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                            <div className="d-flex bg-light p-3 rounded">
-                                <div
-                                    className="flex-shrink-0 btn-square bg-secondary rounded-circle"
-                                    style={{ width: "64px", height: "64px" }}
-                                >
-                                    <i className="fas fa-map-marker-alt text-white"></i>
-                                </div>
-                                <div className="ms-3">
-                                    <h4 className="text-primary">Address</h4>
-                                    <Link
-                                        to="https://goo.gl/maps/Zd4BCynmTb98ivUJ6"
-                                        target="_blank"
-                                        className="h5"
-                                    >23 rank Str, NY</Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                            <div className="d-flex bg-light p-3 rounded">
-                                <div
-                                    className="flex-shrink-0 btn-square bg-secondary rounded-circle"
-                                    style={{ width: "64px", height: "64px" }}
-                                >
-                                    <i className="fa fa-phone text-white"></i>
-                                </div>
-                                <div className="ms-3">
-                                    <h4 className="text-primary">Call Us</h4>
-                                    <Link className="h5" to="tel:+0123456789" target="_blank"
-                                    >+012 3456 7890</Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
-                            <div className="d-flex bg-light p-3 rounded">
-                                <div
-                                    className="flex-shrink-0 btn-square bg-secondary rounded-circle"
-                                    style={{ width: "64px", height: "64px" }}
-                                >
-                                    <i className="fa fa-envelope text-white"></i>
-                                </div>
-                                <div className="ms-3">
-                                    <h4 className="text-primary">Email Us</h4>
-                                    <Link className="h5" to="mailto:info@example.com" target="_blank"
-                                    >info@example.com</Link>
-                                </div>
-                            </div>
+        <div>
+
+            {/* Contact Section */}
+            <section className="mt-5">
+                <div className="bg-light py-5">
+                    <div className="container">
+                        <div className="d-flex justify-content-between">
+                            <h1 className="fw-bold">Contact us</h1>
+                            <nav className="pt-3" aria-label="breadcrumb">
+                                <ol className="breadcrumb">
+                                    <li className="breadcrumb-item"><a className="nav-link " href="#">Home</a></li>
+                                    <i className="bi bi-caret-right-fill mt-2"></i>
+                                    <li className="breadcrumb-item active mt-2" aria-current="page">Contact</li>
+                                </ol>
+                            </nav>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Main Content */}
+            <main>
+                <div className="container py-5">
                     <div className="row g-5">
-                        <div className="col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                            <div className="p-5 h-100 rounded contact-map">
+                        <div className="col-xl-6">
+                            <div className="row row-cols-md-2 g-4">
+                                {/* Contact Info Cards */}
+                                <div className="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                    <div className="bg-light hvr-shutter-out-horizontal d-block p-3">
+                                        <div className="d-flex justify-content-start">
+                                            {/* <i className="fa-solid fa-envelope h3 pe-2"></i> */}
+                                            <i className='bi bi-envelope h3 pe-2'></i>
+                                            <span className="h5">Email</span>
+                                        </div>
+                                        <span>example@domain.com</span>
+                                    </div>
+                                </div>
+
+                                <div className="aos-item" data-aos="fade-up" data-aos-delay="400">
+                                    <div className="bg-light hvr-shutter-out-horizontal d-block p-3">
+                                        <div className="d-flex justify-content-start">
+                                            <i className="bi bi-telephone h3 pe-2"></i>
+                                            <span className="h5">Phone</span>
+                                        </div>
+                                        <span>+0123456789, +9876543210</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="aos-item mt-4" data-aos="fade-up" data-aos-delay="600">
+                                <div className="bg-light hvr-shutter-out-horizontal d-block p-3">
+                                    <div className="d-flex justify-content-start">
+                                        <i className="fa-solid fa-location-pin h3 pe-2"></i>
+                                        <span className="h5">Office location</span>
+                                    </div>
+                                    <span>#007, Street name, Bigtown BG23 4YZ, England</span>
+                                </div>
+                            </div>
+
+                            <div className="aos-item" data-aos="fade-up" data-aos-delay="800">
                                 <iframe
-                                    className="rounded w-100 h-100"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd"
-                                    style={{border: 0}}
-                                    allowFullScreen=""
-                                    loading="lazy"
-                                    referrerPolicy="no-referrer-when-downgrade"
+                                    className="hvr-shadow"
+                                    width="100%"
+                                    height="345"
+                                    frameBorder="0"
+                                    scrolling="no"
+                                    marginHeight="0"
+                                    marginWidth="0"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.7495799461126!2d85.78377557523591!3d20.261007281203074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a76e34ca56a7%3A0x12a37e05d42cf04f!2sCODE%20DAIS%20SOFTWARE%20AND%20RESEARCH!5e1!3m2!1sen!2sin!4v1731744985623!5m2!1sen!2sinz=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                    title="Location Map"
                                 ></iframe>
                             </div>
                         </div>
-                        <div className="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                            <div className="p-5 rounded contact-form">
-                                <div className="mb-4">
-                                    <input
-                                        type="text"
-                                        className="form-control border-0 py-3"
-                                        placeholder="Your Name"
-                                    />
+
+                        {/* Contact Form */}
+                        <div className="col-xl-6">
+                            <h2 className="pb-4">Leave a message</h2>
+                            <form>
+                                <div className="row g-4">
+                                    <div className="col-6 mb-3">
+                                        <label htmlFor="fname" className="form-label">Fname</label>
+                                        <input type="text" className="form-control" id="fname" placeholder="John" />
+                                    </div>
+                                    <div className="col-6 mb-3">
+                                        <label htmlFor="lname" className="form-label">Lname</label>
+                                        <input type="text" className="form-control" id="lname" placeholder="Doe" />
+                                    </div>
                                 </div>
-                                <div className="mb-4">
-                                    <input
-                                        type="email"
-                                        className="form-control border-0 py-3"
-                                        placeholder="Your Email"
-                                    />
+
+                                <div className="mb-3">
+                                    <label htmlFor="email" className="form-label">Email</label>
+                                    <input type="email" className="form-control" id="email" placeholder="name@example.com" />
                                 </div>
-                                <div className="mb-4">
-                                    <input
-                                        type="text"
-                                        className="form-control border-0 py-3"
-                                        placeholder="Project"
-                                    />
+                                <div className="mb-3">
+                                    <label htmlFor="phone" className="form-label">Phone</label>
+                                    <input type="tel" className="form-control" id="phone" placeholder="+1234567890" />
                                 </div>
-                                <div className="mb-4">
-                                    <textarea
-                                        className="w-100 form-control border-0 py-3"
-                                        rows="6"
-                                        cols="10"
-                                        placeholder="Message"
-                                    ></textarea>
+                                <div className="mb-3">
+                                    <label htmlFor="country" className="form-label">Country</label>
+                                    <select className="form-select" id="country">
+                                        <option value="1">USA</option>
+                                        <option value="2">Non USA</option>
+                                    </select>
                                 </div>
-                                <div className="text-start">
-                                    <button
-                                        className="btn bg-primary text-white py-3 px-5"
-                                        type="button"
-                                    >
-                                        Send Message
-                                    </button>
+                                <div className="mb-3">
+                                    <label htmlFor="message" className="form-label">Message</label>
+                                    <textarea className="form-control" id="message" rows="3"></textarea>
                                 </div>
-                            </div>
+                                <button type="submit" className="btn btn-dark">Send Message</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
     )
 }
 
-export default Contactstart
+export default ContactStart
