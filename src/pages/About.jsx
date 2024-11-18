@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import Aboutstart from "../components/Aboutstart";
 import Teamstart from "../components/Teamstart";
-
+// new 
 const About = () => {
     return (
         <div>
