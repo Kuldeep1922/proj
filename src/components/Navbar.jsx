@@ -46,7 +46,7 @@ const Navbar = () => {
                                     >
                                         Pages
                                     </Link>
-                                    <div className="dropdown-menu rounded">
+                                    <div className="dropdown-menu rounded" style={{ width: "100vh" }}>
                                         <Link to="/blog" className="dropdown-item">
                                             Our Blog
                                         </Link>
