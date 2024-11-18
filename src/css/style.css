@@ -1,4 +1,12 @@
-/*** Spinner Start ***/
+/* Hide the image container on mobile devices */
+@media (max-width: 768px) {
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+  }
+  
 .starcolor{
     color: #FFD700;
 }
@@ -14,6 +22,7 @@
      visibility: visible;
      opacity: 1;
  }
+
 
 /*** Spinner End ***/
 
@@ -156,6 +165,7 @@
 
 .carousel-item {
     position: relative;
+    height: 500px;
 }
 
 .carousel-item::after {
@@ -165,7 +175,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .carousel-caption {
@@ -664,5 +674,15 @@
     background: var(--bs-secondary);
     border: 0;
 }
+.clc:hover
+{
+   color:palevioletred;
+   
+}
+@media (max-width: 768px) {
+    .btnb {
+      font-size: 13px;
+    }
+  }
 
 /*** Footer End ***/
