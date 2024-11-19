@@ -31,7 +31,10 @@ const Homepage = () => {
       <Contactstart />
       <Footer />
       {/* <!-- Back to Top --> */}
-      <Link to="#" className="btn btn-secondary btn-square rounded-circle back-to-top"><i className="fa fa-arrow-up text-white"></i></Link>
+      <a href="#" className="btn btn-secondary btn-square rounded-circle back-to-top">
+        <i className="fa fa-arrow-up text-white"></i>
+      </a>
+
     </div>
   );
 };

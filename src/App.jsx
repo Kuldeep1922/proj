@@ -9,6 +9,7 @@ import Testimonial from './pages/Testimonial.jsx';
 import Service from './pages/Services.jsx';
 import Contactpage from './pages/Contactpage.jsx';
 import Notfound from './pages/Notfound.jsx';
+import CareerPage from './pages/CareerPage.jsx';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/services" element={<Service />} />
           <Route path="/contact" element={<Contactpage />} />
           <Route path="/404" element={<Notfound />} />
+          <Route path="/careers" element={<CareerPage />} />
         </Routes>
       </div>
     </Router>
