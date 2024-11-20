@@ -29,7 +29,7 @@ function App() {
           <Route path="/404" element={<Notfound />} />
           <Route path="/careers" element={<CareerPage />} />
           <Route path="/app" element={<Appp />} />
-          <Route path="/news" element={<NewsLetter />} />
+          {/* <Route path="/news" element={<NewsLetter />} /> */}
         </Routes>
       </div>
     </Router>

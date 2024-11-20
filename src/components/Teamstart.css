@@ -3,6 +3,7 @@
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     padding: 80px 20px;
     position: relative;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .section-header h5 {
@@ -32,7 +33,7 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     cursor: pointer;
-    margin: 15px 0; /* Adjust margin between cards */
+    margin: 15px; /* Maintain spacing between cards */
 }
 
 .team-card:hover {
@@ -41,14 +42,14 @@
 
 .team-img-wrapper {
     position: relative;
-    height: 220px; /* Fixed height for images */
-    width: 100%; /* Ensure the wrapper takes full width */
+    height: 250px; /* Fixed height for images */
+    width: 100%;
 }
 
 .team-img {
     width: 100%;
-    height: 100%; /* Ensure the image fills the container */
-    object-fit: cover; /* Prevent stretching, ensure proper aspect ratio */
+    height: 100%;
+    object-fit: cover; /* Ensure images retain proper aspect ratio */
     border-bottom: 5px solid #ff6f61;
 }
 
@@ -76,23 +77,21 @@
 }
 
 .social-icon {
-    display: inline-block;
     color: #fff;
     font-size: 20px;
     background: #26d48c;
-    width: 40px; /* Ensuring the width */
-    height: 40px; /* Ensuring the height matches the width */
-    padding: 0; /* Removing padding to maintain the circular shape */
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
-    align-items: center; /* Center the icon vertically */
-    justify-content: center; /* Center the icon horizontally */
-    transition: background 0.3s ease, transform 0.3s ease; /* Adding smooth animation */
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon:hover {
     background: #343a40;
-    transform: scale(1.1); /* Adding a slight zoom effect on hover */
+    transform: scale(1.1);
 }
 
 /* Team Details */
@@ -113,31 +112,39 @@
     color: #6c757d;
 }
 
+/* Owl Carousel Adjustments */
+.owl-carousel .owl-stage {
+    display: flex;
+    justify-content: center; /* Ensure cards are centered */
+    gap: 20px; /* Maintain equal spacing between cards */
+}
+
+.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center; /* Center cards */
+}
+
+/* Fix Carousel Overflow */
+.owl-carousel {
+    overflow: hidden; /* Prevent overflowing of content */
+    padding: 0 15px; /* Add padding to avoid side overlap */
+}
+
 /* Responsive Adjustments */
 @media screen and (min-width: 1024px) {
     .team-carousel .owl-item {
-        width: calc(25% - 30px); /* 4 cards in a row with equal spacing */
-        margin-right: 30px; /* Spacing between cards */
+        width: calc(33.33% - 20px); /* 3 cards in a row with proper spacing */
     }
 }
 
 @media screen and (max-width: 1024px) {
     .team-carousel .owl-item {
-        width: calc(33.33% - 30px); /* 3 cards per row for medium screens */
-        margin-right: 30px;
+        width: calc(50% - 20px); /* 2 cards per row for medium screens */
     }
 }
 
 @media screen and (max-width: 768px) {
     .team-carousel .owl-item {
-        width: calc(50% - 15px); /* 2 cards per row for smaller screens */
-        margin-right: 15px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .team-carousel .owl-item {
-        width: 100%; /* 1 card per row for mobile devices */
-        margin-right: 0;
+        width: calc(100% - 30px); /* 1 card per row for small screens */
     }
 }

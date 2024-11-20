@@ -37,11 +37,14 @@ export default function Carousel() {
                         className="active"
                         aria-current="true"
                         aria-label="First slide"
+                        style={{}}
                     ></li>
                     <li
                         data-bs-target="#carouselId"
                         data-bs-slide-to="1"
                         aria-label="Second slide"
+                        style={{}}
+
                     ></li>
                 </ol>
                 <div className="carousel-inner" role="listbox">
@@ -51,7 +54,7 @@ export default function Carousel() {
                             src="./src/img/carousel-1.jpg"
                             className="img-fluid"
                             alt="First slide"
-                            style={{ height: "100%", width: "100%" }}
+                            style={{ height: "100vh", width: "100%" }}
                         />
                         <div className="carousel-caption" >
                             <div className="container carousel-content car-cont" style={{ width: "70%" }}>
@@ -59,7 +62,7 @@ export default function Carousel() {
                                     Best IT Solutions
                                 </h6>
                                 <h1 className="text-white display-1 mb-4 animated fadeInRight">
-                                    An Innovative IT Solutions Agency
+                                    An Innovative IT Solutions
                                 </h1>
                                 <p className="mb-4 text-white fs-5 animated fadeInDown">
                                     Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut
@@ -68,19 +71,22 @@ export default function Carousel() {
                                 </p>
 
 
-                                <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}><Link href="" className="me-2"><button type="button" className="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">
-                                    <span className='btnb'>Read More</span>
-                                </button></Link>
-                                    {/* <br />
-                                    <br /> */}
-                                    <Link href="" className="ms-2"><button type="button" className="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">
-
-                                        <span className='btnb'>Contact Us</span>
-                                    </button></Link></div>
+                                <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                    <Link href="" className="me-2">
+                                        <button type="button" className="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">
+                                            <span className='btnb'>Read More</span>
+                                        </button>
+                                    </Link>
+                                    <Link href="" className="ms-2">
+                                        <button type="button" className="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">
+                                            <span className='btnb'>Contact Us</span>
+                                        </button>
+                                    </Link>
+                                </div>
 
                             </div>
                             {/* Callback Request Form */}
-                            <div className="container mt-5 car-form" style={{ width: "40%", justifyContent: "flex-end", boxShadow: "2px 2px 10px blue, -2px -2px 10px green", padding: "10px", marginLeft: "50px", }}>
+                            <div className="container mt-5 car-form " style={{ width: "40%", justifyContent: "flex-end", boxShadow: "2px 2px 10px blue, -2px -2px 10px green", padding: "10px", marginLeft: "50px", }}>
                                 <h2 className="text-center mb-4 text-white">Request a Callback</h2>
                                 <form onSubmit={handleSubmit} >
                                     <div className="row">
@@ -155,31 +161,31 @@ export default function Carousel() {
                         </div>
                     </div>
                     {/* Carousel Controls */}
-                <button
-                    className="carousel-control-prev car-arrow"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="prev"
+                    <button
+                        className="carousel-control-prev car-arrow"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="prev"
 
-                >
-                    <span
-                        className="carousel-control-prev-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span className="visually-hidden  ">Previous</span>
-                </button>
-                <button
-                    className="carousel-control-next car-arrow"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="next"
-                >
-                    <span
-                        className="carousel-control-next-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
+                    >
+                        <span
+                            className="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span className="visually-hidden  ">Previous</span>
+                    </button>
+                    <button
+                        className="carousel-control-next car-arrow"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            className="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span className="visually-hidden">Next</span>
+                    </button>
 
                     {/* Second Carousel Item with Callback Form */}
                     <div className="carousel-item">
@@ -203,6 +209,20 @@ export default function Carousel() {
                                     interdum. Pellentesque aliquam dolor eget urna ultricies
                                     tincidunt.
                                 </p>
+
+                                <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                    <Link href="" className="me-2">
+                                        <button type="button" className="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">
+                                            <span className='btnb'>Read More</span>
+                                        </button>
+                                    </Link>
+                                    <Link href="" className="ms-2">
+                                        <button type="button" className="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">
+                                            <span className='btnb'>Contact Us</span>
+                                        </button>
+                                    </Link>
+                                </div>
+
                             </div>
 
                             {/* Callback Request Form */}
@@ -280,32 +300,32 @@ export default function Carousel() {
                             </div>
                         </div>
                     </div>
-                {/* Carousel Controls */}
-                <button
-                    className="carousel-control-prev car-arrow"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="prev"
+                    {/* Carousel Controls */}
+                    <button
+                        className="carousel-control-prev car-arrow"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="prev"
 
-                >
-                    <span
-                        className="carousel-control-prev-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span className="visually-hidden  ">Previous</span>
-                </button>
-                <button
-                    className="carousel-control-next car-arrow"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="next"
-                >
-                    <span
-                        className="carousel-control-next-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
+                    >
+                        <span
+                            className="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span className="visually-hidden  ">Previous</span>
+                    </button>
+                    <button
+                        className="carousel-control-next car-arrow"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            className="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span className="visually-hidden">Next</span>
+                    </button>
                 </div>
 
             </div>

@@ -32,6 +32,7 @@ const Teamstart = () => {
                     {/* Team Cards */}
                     {[
                         { name: 'John Doe', role: 'CEO', img: './src/img/team-1.jpg' },
+                        { name: 'John Doe', role: 'CEO', img: './src/img/team-1.jpg' },
                         { name: 'Jane Smith', role: 'CTO', img: './src/img/team-2.jpg' },
                         { name: 'Michael Johnson', role: 'Lead Developer', img: './src/img/team-3.jpg' },
                         { name: 'Sarah Lee', role: 'Designer', img: './src/img/team-4.jpg' },

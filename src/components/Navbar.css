@@ -1,0 +1,11 @@
+/* Smooth transition for the navbar */
+.navbar-collapse {
+  overflow: hidden;
+  max-height: 0; /* Initially collapsed */
+  transition: max-height 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* When the navbar is open */
+.navbar-collapse.show {
+  max-height: 500px; /* Adjust this value based on the height of your navbar content */
+}
