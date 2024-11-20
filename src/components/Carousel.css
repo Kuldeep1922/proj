@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+  .car-form {
+    display: none; /* Completely hides the form on smaller screens */
+  }
+  .car-cont {
+    width: 100%;
+  }
+  .car-arrow {
+    background-color: transparent;
+  }
+  .car-arrow span {
+    /* font-size: 0; */
+  }
+}

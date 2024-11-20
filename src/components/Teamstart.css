@@ -1,0 +1,143 @@
+/* Team Section Styling */
+.team-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 80px 20px;
+    position: relative;
+}
+
+.section-header h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6f61;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-header h1 {
+    font-size: 36px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+/* Team Card Styling */
+.team-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin: 15px 0; /* Adjust margin between cards */
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-img-wrapper {
+    position: relative;
+    height: 220px; /* Fixed height for images */
+    width: 100%; /* Ensure the wrapper takes full width */
+}
+
+.team-img {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Prevent stretching, ensure proper aspect ratio */
+    border-bottom: 5px solid #ff6f61;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.team-card:hover .overlay {
+    opacity: 1;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    background: #26d48c;
+    width: 40px; /* Ensuring the width */
+    height: 40px; /* Ensuring the height matches the width */
+    padding: 0; /* Removing padding to maintain the circular shape */
+    border-radius: 50%;
+    display: flex;
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    transition: background 0.3s ease, transform 0.3s ease; /* Adding smooth animation */
+}
+
+.social-icon:hover {
+    background: #343a40;
+    transform: scale(1.1); /* Adding a slight zoom effect on hover */
+}
+
+/* Team Details */
+.team-details {
+    text-align: center;
+    padding: 15px;
+}
+
+.team-details h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+
+.team-details p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+/* Responsive Adjustments */
+@media screen and (min-width: 1024px) {
+    .team-carousel .owl-item {
+        width: calc(25% - 30px); /* 4 cards in a row with equal spacing */
+        margin-right: 30px; /* Spacing between cards */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .team-carousel .owl-item {
+        width: calc(33.33% - 30px); /* 3 cards per row for medium screens */
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team-carousel .owl-item {
+        width: calc(50% - 15px); /* 2 cards per row for smaller screens */
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-carousel .owl-item {
+        width: 100%; /* 1 card per row for mobile devices */
+        margin-right: 0;
+    }
+}

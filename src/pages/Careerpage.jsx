@@ -155,7 +155,7 @@ const CareerPage = () => {
                                 name="resume"
                                 accept=".pdf,.doc,.docx"
                                 onChange={handleChange}
-                                required
+                                // required
                                 style={{ border: ".5px solid grey" }}
                             />
                         </div>

@@ -10,6 +10,8 @@ import Service from './pages/Services.jsx';
 import Contactpage from './pages/Contactpage.jsx';
 import Notfound from './pages/Notfound.jsx';
 import CareerPage from './pages/CareerPage.jsx';
+import Appp from './pages/Appp.jsx';
+
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/contact" element={<Contactpage />} />
           <Route path="/404" element={<Notfound />} />
           <Route path="/careers" element={<CareerPage />} />
+          <Route path="/app" element={<Appp />} />
+          <Route path="/news" element={<NewsLetter />} />
         </Routes>
       </div>
     </Router>

@@ -165,7 +165,7 @@
 
 .carousel-item {
     position: relative;
-    height: 500px;
+    height: 600px;
 }
 
 .carousel-item::after {
