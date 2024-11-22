@@ -4,9 +4,27 @@
   }
   .car-cont {
     width: 100%;
+    margin-top: -80px;
+    /* margin-left: -30px; */
+    font-size: 10px;
+    padding: inherit;
   }
   .car-arrow {
     background-color: transparent;
+    top: 35%;
+    margin-left: -28px;
+    margin-right: -28px;
+  }
+  .carousel-caption {
+    justify-content: 0;
+    align-items: 0;
+    /* display: block; */
+    position: absolute;
+    /* right: 10%; */
+    bottom: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 1.25rem;
+    text-align: center;
   }
   .car-arrow span {
     /* font-size: 0; */

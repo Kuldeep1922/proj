@@ -73,7 +73,8 @@ const Navbar = () => {
                                             style={{
                                                 display: "flex",
                                                 justifyContent: "space-around",
-                                                background: "linear-gradient(135deg, #EECE13 10%, #B210FF 100%)",
+                                                // background: "linear-gradient(135deg, #EECE13 10%, #B210FF 100%)",
+                                                background: "#4343ff",
                                             }}
                                         >
                                             <div
@@ -112,7 +113,7 @@ const Navbar = () => {
                                                     marginRight: "10px",
                                                     cursor: "pointer",
                                                 }}
-                                                className="d-none d-lg-block" // Hide on small screens, show on large screens
+                                                // className="d-none d-lg-block" // Hide on small screens, show on large screens
                                             ></div>
                                         </div>
                                     )}
